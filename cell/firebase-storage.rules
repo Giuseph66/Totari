@@ -1,0 +1,12 @@
+rules_version = '2';
+
+// Firebase Storage Security Rules for Totari
+// TEMPORARY: Allow all access for testing with Firestore auth
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow all read/write for testing - TODO: Implement proper auth with Firestore
+    match /{allPaths=**} {
+      allow read, write: if true;
+    }
+  }
+}
