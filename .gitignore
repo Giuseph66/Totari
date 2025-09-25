@@ -1,0 +1,435 @@
+# ===========================================
+# TOTARI PROJECT - COMPLETE .GITIGNORE
+# Covers both Mobile (React Native/Expo) and Desktop (Python)
+# ===========================================
+
+# ===========================================
+# MOBILE APP (React Native / Expo)
+# ===========================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native builds
+ios/
+android/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro bundler
+.metro-health-check*
+.metro-cache/
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ===========================================
+# DESKTOP APP (Python)
+# ===========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ===========================================
+# FIREBASE & SECURITY
+# ===========================================
+
+# Firebase service account keys (CRITICAL - NEVER COMMIT)
+*firebase-adminsdk*.json
+*firebase-service-account*.json
+service-account-key.json
+firebase-adminsdk-*.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# API Keys and secrets
+config/secrets.json
+secrets/
+*.pem
+*.key
+*.p12
+*.mobileprovision
+
+# ===========================================
+# AUDIO & MEDIA FILES
+# ===========================================
+
+# Audio recordings (temporary files)
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.flac
+temp_audio/
+recordings/
+audio_cache/
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Image files (except assets)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.jpeg
+!assets/**/*.gif
+!assets/**/*.webp
+
+# ===========================================
+# LOGS & DEBUGGING
+# ===========================================
+
+# Log files
+*.log
+logs/
+totari.log
+debug.log
+error.log
+access.log
+
+# Debug files
+*.dmp
+*.stackdump
+core.*
+
+# ===========================================
+# OPERATING SYSTEM
+# ===========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.target/
+.metadata
+.factorypath
+.buildpath
+.classpath
+.project
+.externalToolBuilders/
+*.launch
+.pydevproject
+.cproject
+.autotools
+.factorypath
+.buildpath
+.target
+.tern-project
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# DEVELOPMENT TOOLS
+# ===========================================
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Jest
+coverage/
+
+# Storybook
+storybook-static/
+
+# ===========================================
+# BUILD & DEPLOYMENT
+# ===========================================
+
+# Build outputs
+build/
+dist/
+out/
+.next/
+.nuxt/
+.vuepress/dist
+
+# EAS Build
+.easignore
+
+# APK/IPA files
+*.apk
+*.ipa
+*.aab
+
+# ===========================================
+# TEMPORARY FILES
+# ===========================================
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# ===========================================
+# PROJECT SPECIFIC
+# ===========================================
+
+# Generated files
+app-example/
+generated/
+
+# Test files (if not needed in repo)
+test_*.py
+*_test.py
+tests/temp/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ===========================================
+# KEEP THESE FILES (DO NOT IGNORE)
+# ===========================================
+
+# Keep important config files
+!package.json
+!package-lock.json
+!yarn.lock
+!requirements.txt
+!tsconfig.json
+!babel.config.js
+!metro.config.js
+!app.json
+!eas.json
+
+# Keep documentation
+!README.md
+!*.md
+
+# generated native folders
+/ios
+/android
+
+# Keep example files
+!*.example
+!env.example

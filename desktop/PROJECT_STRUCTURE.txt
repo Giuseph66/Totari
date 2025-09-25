@@ -1,0 +1,18 @@
+totari-desktop/
+├── main.py                 # Ponto de entrada principal
+├── requirements.txt        # Dependências do projeto
+├── .env.example           # Exemplo de variáveis de ambiente
+├── README.md              # Documentação
+├── src/
+│   ├── __init__.py
+│   ├── tray.py            # Ícone de bandeja e menu
+│   ├── auth.py            # Autenticação com Firebase
+│   ├── storage.py         # Integração com Firebase Storage
+│   ├── ui.py              # Interface do usuário
+│   ├── notifications.py   # Notificações nativas
+│   ├── elevenlabs.py      # Integração com ElevenLabs
+│   └── utils.py           # Funções utilitárias
+├── assets/
+│   └── icon.png           # Ícone da aplicação
+└── tests/
+    └── __init__.py
